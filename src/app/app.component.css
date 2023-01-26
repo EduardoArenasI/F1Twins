@@ -1,11 +1,33 @@
 h1 {
-    font-family: monospace;
-    padding-top: 20px;
+    padding-top: 200px;
     padding-left: 9%;
     padding-bottom: 20px;
     color: #fff;
-}
+    text-shadow: -1px 0 black, 0 1px black,
+	1px 0 black, 0 -1px black;
 
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 7rem;
+    margin: 0 auto;
+    font-family: "Courier New";
+    border-right: 0.15em solid transparent;
+    animation: typing 2s steps(7) 1s 1 normal both, blink 1s steps(1) ;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to { 
+        width: 100%;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
 .home p{
     padding-left: 10%;
     text-shadow: 7px;
